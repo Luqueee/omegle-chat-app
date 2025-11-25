@@ -1,0 +1,30 @@
+{
+  "name": "@packages/backend",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "dev": "convex dev",
+    "setup": "convex dev --until-success"
+  },
+  "exports": {
+    "./generated": "./convex/_generated/api.js",
+    "./dataModel": "./convex/_generated/dataModel.js",
+    "./models": "./convex/model/index.ts",
+    "./profile": "./convex/profile.ts",
+    "./auth": "./convex/auth.ts",
+    "./channels": "./convex/channels.ts"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@convex-dev/presence": "^0.3.0",
+    "@convex-dev/r2": "^0.8.0",
+    "convex": "^1.29.0",
+    "convex-helpers": "^0.1.105",
+    "dotenv": "^17.2.3"
+  },
+  "devDependencies": {
+    "@types/node": "^24.10.1",
+    "typescript": "5.8.3"
+  }
+}
